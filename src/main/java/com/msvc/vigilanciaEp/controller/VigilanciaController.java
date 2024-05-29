@@ -64,6 +64,91 @@ public class VigilanciaController {
         vigilanciaService.agregarVirusIztapalapa(virusCasos);
         return ResponseEntity.ok("virus agreado exitosamente");
     }
+    @PostMapping("/iztacalco/virus")
+    public ResponseEntity<String> agregarVirusIztacalco(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusIztacalco(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+    @PostMapping("/gustavoAmadero/virus")
+    public ResponseEntity<String> agregarVirusGustavoAmadero(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusGustavoAmadero(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+    @PostMapping("/alvaroObregon/virus")
+    public ResponseEntity<String> agregarVirusAlvaroObregon(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusAlvaroObregon(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+
+    @PostMapping("/azcapotzalco/virus")
+    public ResponseEntity<String> agregarVirusAzcapotzalco(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusAzcapotzalco(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+
+    @PostMapping("/coyoacan/virus")
+    public ResponseEntity<String> agregarVirusCoyoacan(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusCoyoacan(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+    @PostMapping("/cuajimalpa/virus")
+    public ResponseEntity<String> agregarVirusCuajimalpa(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusCuajimalpa(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+    @PostMapping("/magdalenaContreras/virus")
+    public ResponseEntity<String> agregarVirusMagdalenaContreras(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusMagdalenaContreras(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+
+    @PostMapping("/tlalpan/virus")
+    public ResponseEntity<String> agregarVirusTlalpan(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusTlalpan(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+
+    @PostMapping("/cuahutemoc/virus")
+    public ResponseEntity<String> agregarVirusCuahutemoc(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusCuahutemoc(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+    @PostMapping("/benitoJuarez/virus")
+    public ResponseEntity<String> agregarVirusBenitoJuarez(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusBenitoJuarez(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+    @PostMapping("/miguelHidalgo/virus")
+    public ResponseEntity<String> agregarVirusMiguelHidalgo(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusMiguelHidalgo(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+
+    @PostMapping("/milpaAlta/virus")
+    public ResponseEntity<String> agregarVirusMilpaAlta(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusMilpaAlta(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+    @PostMapping("/tlahuac/virus")
+    public ResponseEntity<String> agregarVirusTlahuac(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusTlahuac(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+
+    @PostMapping("/venustinoCarranza/virus")
+    public ResponseEntity<String> agregarVirusVenustianoCarranza(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusVenustianoCarranza(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+    @PostMapping("/xochimilco/virus")
+    public ResponseEntity<String> agregarVirusXochimilco(@RequestBody VirusCasos virusCasos){
+        vigilanciaService.agregarVirusXochimilco(virusCasos);
+        return ResponseEntity.ok("virus agreado exitosamente");
+    }
+
+
+
+
 
     /*metodo GET por alcaldia*/
 

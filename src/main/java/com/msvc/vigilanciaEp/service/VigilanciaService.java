@@ -129,6 +129,250 @@ public class VigilanciaService {
 
     }
 
+    public void agregarVirusIztacalco(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("Iztacalco");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaIztacalco = optionalVigilancia.get(0);
+            vigilanciaIztacalco.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaIztacalco);
+
+        } else {
+            //si no hay vigilancias para iztacalco
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusGustavoAmadero(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("Gustavo A Madero");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaGustavoAmadero = optionalVigilancia.get(0);
+            vigilanciaGustavoAmadero.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaGustavoAmadero);
+
+        } else {
+            //si no hay vigilancias para vigilanciaGustavoAmadero
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusAlvaroObregon(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("alvaroObregon");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaAlvaroObregon = optionalVigilancia.get(0);
+            vigilanciaAlvaroObregon.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaAlvaroObregon);
+
+        } else {
+            //si no hay vigilancias para vigilanciaAlvaroObregon
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusAzcapotzalco(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("Azcapotzalco");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaAzcapotzalco = optionalVigilancia.get(0);
+            vigilanciaAzcapotzalco.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaAzcapotzalco);
+
+        } else {
+            //si no hay vigilancias para vigilanciaAzcapotzalco
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusCoyoacan(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("Coyoacan");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaCoyoacan = optionalVigilancia.get(0);
+            vigilanciaCoyoacan.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaCoyoacan);
+
+        } else {
+            //si no hay vigilancias para vigilanciaCoyoacan
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusCuajimalpa(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("Cuajimalpa");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaCuajimalpa = optionalVigilancia.get(0);
+            vigilanciaCuajimalpa.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaCuajimalpa);
+
+        } else {
+            //si no hay vigilancias para vigilanciaCuajimalpa
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusMagdalenaContreras(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("MagdalenaContreras");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaMagdalenaContreras = optionalVigilancia.get(0);
+            vigilanciaMagdalenaContreras.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaMagdalenaContreras);
+
+        } else {
+            //si no hay vigilancias para vigilanciaMagdalenaContreras
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusTlalpan(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("Tlalpan");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaTlalpan = optionalVigilancia.get(0);
+            vigilanciaTlalpan.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaTlalpan);
+
+        } else {
+            //si no hay vigilancias para vigilanciaTlalpan
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusBenitoJuarez(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("BenitoJuarez");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaBenitoJuarez = optionalVigilancia.get(0);
+            vigilanciaBenitoJuarez.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaBenitoJuarez);
+
+        } else {
+            //si no hay vigilancias para vigilanciaBenitoJuarez
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+
+    public void agregarVirusMiguelHidalgo(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("MiguelHidalgo");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaMiguelHidalgo = optionalVigilancia.get(0);
+            vigilanciaMiguelHidalgo.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaMiguelHidalgo);
+
+        } else {
+            //si no hay vigilancias para vigilanciaMiguelHidalgo
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusMilpaAlta(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("MilpaAlta");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaMilpaAlta = optionalVigilancia.get(0);
+            vigilanciaMilpaAlta.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaMilpaAlta);
+
+        } else {
+            //si no hay vigilancias para vigilanciaMilpaAlta
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+
+    public void agregarVirusTlahuac(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("Tlahuac");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaTlahuac = optionalVigilancia.get(0);
+            vigilanciaTlahuac.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaTlahuac);
+
+        } else {
+            //si no hay vigilancias para vigilanciaTlahuac
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusVenustianoCarranza(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("VenustianoCarranza");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaVenustianoCarranza = optionalVigilancia.get(0);
+            vigilanciaVenustianoCarranza.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaVenustianoCarranza);
+
+        } else {
+            //si no hay vigilancias para vigilanciaVenustianoCarranza
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusXochimilco(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("Xochimilco");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaXochimilco = optionalVigilancia.get(0);
+            vigilanciaXochimilco.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaXochimilco);
+
+        } else {
+            //si no hay vigilancias para vigilanciaXochimilco
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+    public void agregarVirusCuahutemoc(VirusCasos virusCasos) {
+        List<Vigilancia> optionalVigilancia = vigilanciaRepository.findByAlcaldia("Xochimilco");
+
+        if (optionalVigilancia != null) {
+
+            Vigilancia vigilanciaCuahutemoc = optionalVigilancia.get(0);
+            vigilanciaCuahutemoc.getVirusCasos().add(virusCasos);
+            vigilanciaRepository.save(vigilanciaCuahutemoc);
+
+        } else {
+            //si no hay vigilancias para vigilanciaCuahutemoc
+            logger.severe("no se encuentran vigilancias ");
+        }
+
+    }
+
+
+
     /*agregar un nuevo mes a iztapalapa y al virus*/
     public void agregarMes(String alcaldia, String nombreVirus, MesCasos nuevoMes) {
         List<Vigilancia> listVigilancia = vigilanciaRepository.findByAlcaldia(alcaldia);
@@ -272,6 +516,7 @@ public class VigilanciaService {
                         if (m.getMes().equals(mes)) {
                             // Actualizar casosHistoricos para el mes específico
                             m.setCasosHistoricos(nuevosCasosHistoricos);
+
                             // Guardar los cambios en el mongo
                             vigilanciaRepository.save(vigilancia1);
                             return;
